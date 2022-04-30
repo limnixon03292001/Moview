@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+
+/* @import url('slick-carousel/slick/slick-theme.css'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* some modifications to silder, adding space in x axis on each slides  */
+.slick-slide > div {
+    margin: 0 7px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slick-track{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width:max-content !important;
 }
+
+/* .slick-list {
+    margin: 0 -100px;
+    width: 100%;
+} */
